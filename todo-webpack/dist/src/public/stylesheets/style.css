@@ -1,0 +1,15 @@
+body {
+  padding: 25px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style-type: square;
+}
+ button{
+   padding: 5px;
+}

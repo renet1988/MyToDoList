@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  
+  button: a(href='/add' ) Add a new Text
+  ul
+  each val in lista
+    div: li: form(action='/' + val.number +'/delete',method='post',enctype='application/x-www-form-urlencoded')
+          button(type='submit') X 
+          span= val.dato + " "  
+          button: a(href='/' + val.number + '/edit')  Edit
+      
+  p Wath should i do?
+    input(type='text' name='text')
+    button Confirm

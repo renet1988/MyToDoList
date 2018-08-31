@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["routes/users.js"],"sourcesContent":["'use strict';\n\nvar express = require('express');\nvar router = express.Router();\n\n/* GET users listing. */\nrouter.get('/', function (req, res, next) {\n  res.send('respond with a resource');\n});\n\nmodule.exports = router;"],"file":"users.js"}

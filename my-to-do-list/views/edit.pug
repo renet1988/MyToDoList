@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+	h1.
+		Text ID #{text.number}
+	form(action='/' + text.number + '/update',method='post',name='updateList')
+		p Number:
+			input#inputNumber(type="number", placeholder="ex. 123456", value= text.number , name="number")
+		p Text: 
+			input#inputOrigin(type="text", placeholder="ex. Hola", value= text.dato, name="dato")
+		p
+			button#btnSubmit(type='submit').
+				Update
